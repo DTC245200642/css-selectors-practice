@@ -1,0 +1,79 @@
+/* 1. Bộ chọn element (thẻ): Đổi màu nền trang và font chữ chung */
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+}
+
+/* 2. Bộ chọn id (#): Căn giữa và định dạng riêng cho tiêu đề h1 */
+#main-heading {
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* 3. Bộ chọn class (.): Định dạng đoạn văn mô tả */
+.description {
+    font-size: 18px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+}
+
+/* Định dạng khu vực chứa sở thích */
+.hobbies-container {
+    background: #ffffff;
+    max-width: 400px;
+    margin: 0 auto 25px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.hobbies-container h3 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+/* 4. Bộ chọn element kết hợp class: Định dạng danh sách ul và các phần tử li */
+ul {
+    list-style-type: square;
+    text-align: left;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+/* Định dạng danh sách với màu sắc khác nhau sử dụng thứ tự (nth-child) */
+li.hobby-item:nth-child(1) {
+    color: #e74c3c; /* Màu đỏ cho sở thích 1 */
+}
+
+li.hobby-item:nth-child(2) {
+    color: #3498db; /* Màu xanh dương cho sở thích 2 */
+}
+
+li.hobby-item:nth-child(3) {
+    color: #e67e22; /* Màu cam cho sở thích 3 */
+}
+
+/* 5. Định dạng nút bấm và hiệu ứng hover */
+.action-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Pseudo-classes (:hover): Hiệu ứng khi di chuột vào nút bấm */
+.action-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
